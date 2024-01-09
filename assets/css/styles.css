@@ -1,0 +1,22 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas: "aside header"
+                       "aside main";
+}
+
+header {
+  background-color: white;
+  grid-area: header;
+}
+
+aside {
+  background-color: blue;
+  grid-area: aside;
+}
+
+main {
+  background-color: gray;
+  grid-area: main;
+}
