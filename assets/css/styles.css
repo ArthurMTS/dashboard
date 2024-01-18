@@ -6,11 +6,6 @@ body {
                        "aside main";
 }
 
-header {
-  background-color: #eef2ff;
-  grid-area: header;
-}
-
 aside {
   background-color: #5b21b6;
   grid-area: aside;
@@ -84,7 +79,149 @@ footer > a > img:hover {
   transform: scale(1.2);
 }
 
+header {
+  background-color: #fff;
+  grid-area: header;
+  display: grid;
+  padding: 10px 30px;
+  grid-template: repeat(2, 1fr) / 2fr 1fr;
+}
+
+header .search-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all .375s;
+}
+
+header form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header .search-button:hover {
+  transform: scale(1.1);
+}
+
+header .search-bar {
+  width: 100%;
+  height: 2rem;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0 12px;
+  border-radius: 1rem;
+  background-color: #c7d2fe;
+}
+
+header .user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.user .notification {
+  width: 1.5rem;
+  cursor: pointer;
+  transition: all .375s;
+}
+
+.user .notification:hover {
+  animation-name: ringbell;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+.user-icon {
+  border-radius: 100%;
+  width: 2.5rem;
+}
+
+.user .user-icon {
+  cursor: pointer;
+  transition: all .375s;
+}
+
+.user .user-icon:hover {
+  box-shadow: 2px 2px 5px #222;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+header .welcome {
+  display: grid;
+  grid-template-areas: "image message"
+                       "image username";
+  justify-content: start;
+  gap: 0 1rem;
+}
+
+.welcome .user-icon {
+  grid-area: image;
+  width: 3.5rem;
+}
+
+.welcome .message {
+  grid-area: message;
+  font-weight: bold;
+  font-size: .8rem;
+}
+
+.welcome .username {
+  grid-area: username;
+  font-size: 1.4rem;
+}
+
+.welcome .username a {
+  color: #000;
+  transition: all .375s;
+}
+
+.welcome .username a:hover {
+  color: #5b21b6;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.controls .button {
+  background-color: #5b21b6;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.6rem;
+  font-size: 1rem;
+  color: #fff;
+  width: 6rem;
+  cursor: pointer;
+  transition: all .375s;
+  font-family: "Roboto", sans-serif;
+}
+
+.controls .button:hover {
+  box-shadow: 2px 2px 5px #222;
+}
+
 main {
-  background-color: #ddd6fe;
+  background-color: #e0e7ff;
   grid-area: main;
+}
+
+@keyframes ringbell {
+  0% {
+    transform: rotate(0.1turn);    
+  }
+  50% {
+    transform: rotate(-0.1turn);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
