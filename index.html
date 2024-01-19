@@ -1,107 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
-  <link rel="stylesheet" href="/assets/css/global.css">
-  <link rel="stylesheet" href="/assets/css/styles.css">
-</head>
-<body>
-  <header>
-    <form>
-      <button class="search-button">
-        <img src="/assets/icons/magnify.svg" alt="Magnifing glass">
-      </button>
-      <input class="search-bar" type="text" name="search" id="search" required>
-    </form>
-    <div class="user">
-      <img class="notification" src="/assets/icons/bell.svg" alt="notification bell">
-      <img class="user-icon" src="/assets/images/user.jpg" alt="user icon">
-      <p class="username">Arthur Silva</p>
-    </div>
-    <div class="welcome">
-      <img class="user-icon" src="/assets/images/user.jpg" alt="user icon">
-      <p class="message">Hello there,</p>
-      <p class="username">Arthur Silva (<a href="https://github.com/ArthurMTS" target="_blank">@arthurmts</a>)</p>
-    </div>
-    <div class="controls">
-      <button class="button">New</button>
-      <button class="button">Upload</button>
-      <button class="button">Share</button>
-    </div>
-  </header>
-  <aside>
-    <div>
-      <img class="logo" src="/assets/icons/dashboard.svg" alt="Dashboard">
-      <h1 class="title">Dashboard</h1>
-    </div>
-    <ul class="nav">
-      <li class="nav-item">
-        <a href="#">
-          <img src="/assets/icons/home.svg" alt="nav-item-icon">
-          <p>Home</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/assets/css/global.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <form>
+        <button class="search-button">
+          <img src="/assets/icons/magnify.svg" alt="Magnifing glass" />
+        </button>
+        <input
+          class="search-bar"
+          type="text"
+          name="search"
+          id="search"
+          required
+        />
+      </form>
+      <div class="user">
+        <img
+          class="notification"
+          src="/assets/icons/bell.svg"
+          alt="notification bell"
+        />
+        <img class="user-icon" src="/assets/images/user.jpg" alt="user icon" />
+        <p class="username">Arthur Silva</p>
+      </div>
+      <div class="welcome">
+        <img class="user-icon" src="/assets/images/user.jpg" alt="user icon" />
+        <p class="message">Hello there,</p>
+        <p class="username">
+          Arthur Silva (<a href="https://github.com/ArthurMTS" target="_blank"
+            >@arthurmts</a
+          >)
+        </p>
+      </div>
+      <div class="controls">
+        <button class="button">New</button>
+        <button class="button">Upload</button>
+        <button class="button">Share</button>
+      </div>
+    </header>
+    <aside>
+      <div>
+        <img class="logo" src="/assets/icons/dashboard.svg" alt="Dashboard" />
+        <h1 class="title">Dashboard</h1>
+      </div>
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="#">
+            <img src="/assets/icons/home.svg" alt="nav-item-icon" />
+            <p>Home</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <img src="/assets/icons/account-details.svg" alt="nav-item-icon" />
+            <p>Profile</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <img src="/assets/icons/message.svg" alt="nav-item-icon" />
+            <p>Messages</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <img src="/assets/icons/clock.svg" alt="nav-item-icon" />
+            <p>History</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <img src="/assets/icons/note-multiple.svg" alt="nav-item-icon" />
+            <p>Tasks</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <img src="/assets/icons/account-group.svg" alt="nav-item-icon" />
+            <p>Communities</p>
+          </a>
+        </li>
+      </ul>
+      <ul class="config">
+        <li class="nav-item">
+          <a href="#">
+            <img src="/assets/icons/cog.svg" alt="nav-item-icon" />
+            <p>Settings</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <img src="/assets/icons/help-box.svg" alt="nav-item-icon" />
+            <p>Support</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <img src="/assets/icons/shield-check.svg" alt="nav-item-icon" />
+            <p>Privacy</p>
+          </a>
+        </li>
+      </ul>
+      <footer>
+        <a href="https://github.com/ArthurMTS" target="_blank">
+          <img src="/assets/icons/github.svg" alt="github logo" />
         </a>
-      </li>
-      <li class="nav-item">
-        <a href="#">
-          <img src="/assets/icons/account-details.svg" alt="nav-item-icon">
-          <p>Profile</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#">
-          <img src="/assets/icons/message.svg" alt="nav-item-icon">
-          <p>Messages</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#">
-          <img src="/assets/icons/clock.svg" alt="nav-item-icon">
-          <p>History</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#">
-          <img src="/assets/icons/note-multiple.svg" alt="nav-item-icon">
-          <p>Tasks</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#">
-          <img src="/assets/icons/account-group.svg" alt="nav-item-icon">
-          <p>Communities</p>
-        </a>
-      </li>
-    </ul>
-    <ul class="config">
-      <li class="nav-item">
-        <a href="#">
-          <img src="/assets/icons/cog.svg" alt="nav-item-icon">
-          <p>Settings</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#">
-          <img src="/assets/icons/help-box.svg" alt="nav-item-icon">
-          <p>Support</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#">
-          <img src="/assets/icons/shield-check.svg" alt="nav-item-icon">
-          <p>Privacy</p>
-        </a>
-      </li>
-    </ul>
-    <footer>
-      <a href="https://github.com/ArthurMTS" target="_blank">
-        <img src="/assets/icons/github.svg" alt="github logo">
-      </a>  
-    </footer>
-  </aside>
-  <main>
-    Your projects
-  </main>
-</body>
+      </footer>
+    </aside>
+    <main>
+      <section id="projects">
+        <h3>Your projects</h3>
+        <div class="project-list">
+          <div class="card">
+            <strong>Super Cool Project</strong>
+            <p>
+              Sed tempus ut lacus ut scelerisque.
+              Suspendisse sollitudin nibh erat, id
+              facilisis felis accumsan nec.
+            </p>
+            <div>
+              <img src="/assets/icons/star-plus-outline.svg" alt="Favorite icon">
+              <img src="/assets/icons/eye-plus-outline.svg" alt="Watch icon">
+              <img src="/assets/icons/source-branch.svg" alt="Source code icon">
+            </div>
+          </div>
+          <div class="card">
+            <strong>Super Cool Project</strong>
+            <p>
+              Sed tempus ut lacus ut scelerisque.
+              Suspendisse sollitudin nibh erat, id
+              facilisis felis accumsan nec.
+            </p>
+            <div>
+              <img src="/assets/icons/star-plus-outline.svg" alt="Favorite icon">
+              <img src="/assets/icons/eye-plus-outline.svg" alt="Watch icon">
+              <img src="/assets/icons/source-branch.svg" alt="Source code icon">
+            </div>
+          </div>
+          <div class="card">
+            <strong>Super Cool Project</strong>
+            <p>
+              Sed tempus ut lacus ut scelerisque.
+              Suspendisse sollitudin nibh erat, id
+              facilisis felis accumsan nec.
+            </p>
+            <div>
+              <img src="/assets/icons/star-plus-outline.svg" alt="Favorite icon">
+              <img src="/assets/icons/eye-plus-outline.svg" alt="Watch icon">
+              <img src="/assets/icons/source-branch.svg" alt="Source code icon">
+            </div>
+          </div>
+          <div class="card">
+            <strong>Super Cool Project</strong>
+            <p>
+              Sed tempus ut lacus ut scelerisque.
+              Suspendisse sollitudin nibh erat, id
+              facilisis felis accumsan nec.
+            </p>
+            <div>
+              <img src="/assets/icons/star-plus-outline.svg" alt="Favorite icon">
+              <img src="/assets/icons/eye-plus-outline.svg" alt="Watch icon">
+              <img src="/assets/icons/source-branch.svg" alt="Source code icon">
+            </div>
+          </div>
+          <div class="card">
+            <strong>Super Cool Project</strong>
+            <p>
+              Sed tempus ut lacus ut scelerisque.
+              Suspendisse sollitudin nibh erat, id
+              facilisis felis accumsan nec.
+            </p>
+            <div>
+              <img src="/assets/icons/star-plus-outline.svg" alt="Favorite icon">
+              <img src="/assets/icons/eye-plus-outline.svg" alt="Watch icon">
+              <img src="/assets/icons/source-branch.svg" alt="Source code icon">
+            </div>
+          </div>
+          <div class="card">
+            <strong>Super Cool Project</strong>
+            <p>
+              Sed tempus ut lacus ut scelerisque.
+              Suspendisse sollitudin nibh erat, id
+              facilisis felis accumsan nec.
+            </p>
+            <div>
+              <img src="/assets/icons/star-plus-outline.svg" alt="Favorite icon">
+              <img src="/assets/icons/eye-plus-outline.svg" alt="Watch icon">
+              <img src="/assets/icons/source-branch.svg" alt="Source code icon">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="announcements">
+        <h3>Announcements</h3>
+        <div class="card">
+          <div class="announce-item">
+            <p>Site Maintenance</p>
+            <p>
+              Vestibulum condimentum tellus lacus, in accumsan elit maximus ac.
+              Denec hendrerit sodales congue...
+            </p>
+          </div>
+          <hr />
+          <div class="announce-item">
+            <p>Community Share Day</p>
+            <p>
+              Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam
+              dictum accumsan porttitor...
+            </p>
+          </div>
+          <hr />
+          <div class="announce-item">
+            <p>Update Privacy Policy</p>
+            <p>
+              Phasellus efficutur nisi eget elit consectetur, eget condimentum
+              ante auctor. Cras fringilla sagittis sem in mattis...
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="trending">
+        <h3>Trending</h3>
+        <div class="card">
+          <div class="trend">
+            <img
+              class="user-icon"
+              src="/assets/images/user.jpg"
+              alt="user icon"
+            />
+            <p class="username">@arthurmts</p>
+            <p class="message">World Peace Builder</p>
+          </div>
+          <div class="trend">
+            <img
+              class="user-icon"
+              src="/assets/images/user.jpg"
+              alt="user icon"
+            />
+            <p class="username">@arthurmts</p>
+            <p class="message">Super Cool Project</p>
+          </div>
+          <div class="trend">
+            <img
+              class="user-icon"
+              src="/assets/images/user.jpg"
+              alt="user icon"
+            />
+            <p class="username">@arthurmts</p>
+            <p class="message">Life Changing App</p>
+          </div>
+          <div class="trend">
+            <img
+              class="user-icon"
+              src="/assets/images/user.jpg"
+              alt="user icon"
+            />
+            <p class="username">@arthurmts</p>
+            <p class="message">No Traffic Maker</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
